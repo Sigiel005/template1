@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Service Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body class="font-sans antialiased bg-gray-50 mt-20">
+    <!-- Header -->
+    <div id="" class="container max-w-screen-2xl mx-auto overflow-hidden">
+        <header id="header"
+            class="max-w-screen-2xl mx-auto bg-white shadow-xl fixed top-0 left-0 right-0 z-30 container">
+            <nav class="nav mx-3 sm:mx-8 lg:mx-auto max-w-screen-xl flex justify-between h-20 items-center">
+                <!-- Nav mobile -->
+                <div class="navbar-mobile lg:hidden">
+                    <!-- Icon Hamburger Menu -->
+                    <label for="check-navbar" class="navbar-mobile-icon text-4xl lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <!-- Checkbox để kiểm tra trạng thái của menu -->
+                    <input type="checkbox" id="check-navbar" class="hidden peer">
+
+                    <!-- Danh sách menu -->
+                    <ul
+                        class="navbar-list-mobile sm:[320px] bg-white z-20 lg:hidden w-[320px] fixed top-0 left-0 bottom-0 transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out">
+                        <li class="navbar-item">
+                            <a href="#"
+                                class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Giới
+                                thiệu</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#"
+                                class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Đối tượng
+                                khách hàng</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#"
+                                class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Quy
+                                trình</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#"
+                                class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Bảng
+                                giá</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#"
+                                class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Cảm nhận
+                                của khách hàng</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#"
+                                class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Đội ngũ
+                                bác sĩ</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#"
+                                class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Hình ảnh
+                                &amp; Video</a>
+                        </li>
+                        <!-- Nút đóng menu -->
+                        <label for="check-navbar" class="navbar-close absolute top-0 right-0 py-3 px-6">
+                            <i class="fa-solid fa-xmark text-5xl"></i>
+                        </label>
+                    </ul>
+
+                    <!-- Overlay -->
+                    <label for="check-navbar"
+                        class="overlay fixed z-10 top-0 right-0 bottom-0 left-0 hidden peer-checked:block bg-black bg-opacity-50"></label>
+                </div>
+                <!-- Logo -->
+                <div class="navbar-logo">
+                    <a href="">
+                        <img src="./img/phuong_dong_logo.png" alt="Logo">
+                    </a>
+                </div>
+                <ul class="navbar-list flex sm:[320px] hidden lg:flex">
+                    <li class="navbar-item">
+                        <a href="#" class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Giới
+                            thiệu</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Đối
+                            tượng khách hàng</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Quy
+                            trình</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Bảng
+                            giá</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Cảm
+                            nhận của khách hàng</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Đội
+                            ngũ bác sĩ</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="py-6 px-2 font-medium block hover:after:bg-sky-400 hover:text-sky-400">Hình
+                            ảnh &amp; Video</a>
+                    </li>
+                </ul>
+                <div class="navbar-btn hidden sm:block">
+                    <a href="Tel:19001806"
+                        class="shadow-lg shadow-orange-300 bg-gradient-to-b from-orange-300 to-orange-500 py-2 px-2.5 rounded-full text-white flex items-center justify-center hover:bg-orange-600 hover:shadow-orange-400">
+                        <span class="bg-white mr-2 rounded-full flex items-center justify-center w-7 h-7">
+                            <i class="text-orange-400 fa-solid fa-phone-volume mt-0.5 -rotate-45 "></i>
+                        </span>
+                        Gọi 1900 1806
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <!-- Dịch vụ  -->
+        <div class="service px-3 lg:px-0">
+            <div class="all-service">
+                <div class="relative">
+                    <div
+                        class="service-infor pt-3 lg:pt-0 lg:absolute lg:top-[10%] lg:left-[9%] z-10 lg:w-6/12 lg:max-w-screen-xl lg:mx-auto">
+                        <h3 class="service-infor-heading text-3xl sm:text-4xl font-medium ">Dịch vụ Tiêm chủng Vắc-xin
+                            Bảo vệ bản thân, bảo vệ mọi người</h3>
+                        <p class="service-infor-text mt-3 lg:mt-10 text-xl lg:text-lg ">
+                            Vắc-xin ra đời được coi là một trong những thành tựu vĩ đại của nhân loại.
+                            Nhờ có Vắc xin, hàng triệu người trên thế giới tránh được nguy cơ tử vong
+                            và những di chứng, dị tật suốt đời do các bệnh truyền nhiễm như sởi, quai
+                            bị, rubella, thủy đậu, uốn ván...
+                        </p>
+                        <div class="service-btn  mt-4 lg:mt-12 sm:flex">
+                            <a href=""
+                                class="uppercase lg:mr-6 sm:mr-4 sm:flex-1 lg:flex-none shadow-lg shadow-orange-300 hover:opacity-90 bg-gradient-to-b from-orange-300 to-orange-500 py-2 px-2.5 rounded-full text-white flex items-center justify-center">
+                                <span class="mr-1 rounded-full flex items-center justify-center w-7 h-7">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </span>
+                                Đăng ký tư vấn
+                            </a>
+                            <a href=""
+                                class="uppercase mt-3 sm:mt-0 shadow-lg sm:flex-1 lg:flex-none shadow-orange-300 py-2 px-2.5 rounded-full hover:opacity-90 bg-gradient-to-b from-orange-300 to-orange-500 text-white font-medium flex items-center justify-center    ">
+                                Quy trình tiêm chủng
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="service-img lg:w-7/12 mt-6 order-1 lg:mt-0  bg-gradient-to-r from-cyan-500 to-blue-500 lg:relative lg:ml-auto lg:top-0 rounded-bl-[40%]">
+                        <span class="service-img-vaccin block relative w-full">
+                            <img
+                                class="bg-[url(./img/vaccin.png)] bg-no-repeat pt-[70%] bg-contain pr-[100%] bg-right-bottom">
+                        </span>
+                        <div
+                            class="service-cent left-[18%] lg:left-[36%] rounded-lg absolute w-52 h-20 flex justify-center items-center bg-white right-[40%] top-[93%] shadow-lg">
+                            <span class="service-cent-img float-left">
+                                <img class="w-14 h-14 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 p-2"
+                                    src="./img/shield-vaccin-2.png" alt="Shield Vaccin">
+                            </span>
+                            <div class="flex-none ml-2">
+                                <span class="cent block text-3xl font-medium text-sky-500">95%</span>
+                                <span class="amuont text-sm text-gray-600">Hiệu quả, an toàn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hiệu quả phòng bệnh -->
+        <div class="prevention mt-20 sm:mt-52 ">
+            <div class="container-pervention lg:flex max-w-screen-xl mx-auto ">
+                <div class="customer relative bg-[url(img/backgroud-customer.png)] bg-no-repeat bg-center pt-[100%] sm:pt-[80%] lg:pt-[60%] xl:pt-[48%] w-full sm:w-10/12 lg:w-8/12 xl:w-7/12">
+                    <img src="./img/customer.png" class="absolute bottom-0 sm:left-[6%]" alt="">
+                    <div class="prevention-satisfied h-20 w-56 justify-center items-center absolute top-[90%] right-[24%] bg-white shadow-lg flex rounded-xl">
+                        <span class="prevention-smile-img">
+                            <span class="flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 p-2 ">
+                                <img src="/img/prevention-smile.png" alt="">
+                            </span>
+                        </span>
+                
+                        <span class="pervention-text ml-2">
+                            <span class="block text-3xl font-medium text-sky-500">100%</span>
+                            <span>Khách hàng hài lòng </span>
+                        </span>
+                    </div>
+                    <div class="prevention-inject hidden sm:flex h-20 w-56 justify-center items-center absolute top-[90%] right-[57%] lg:top-[50%] xl:right-[70%] bg-white shadow-lg flex rounded-xl">
+                        <span class="prevention-inject-img">
+                            <span class="flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 p-2 ">
+                                <img src="/img/Virus.png" alt="">
+                            </span>
+                        </span>
+                
+                        <span class="pervention-text ml-2">
+                            <span class="block text-3xl font-medium text-sky-500">900+</span>
+                            <span>Khách hàng đã tiêm </span>
+                        </span>
+                    </div>
+                    <span class="bg-[url(img/prevention-1.png)] bg-no-repeat absolute hidden lg:block bg-center top-0 lg:right-[100%] pt-[20%] sm:pt-[10%] pr-[20%] sm:pr-[10%]"></span>
+                </div>
+                <div class="customer-text relative w-full lg:w-5/12 mt-14 ">
+                    <span class=" hidden lg:block absolute bottom-[100%] left-[92%] bg-[url(img/donut.png)] bg-no-repeat bg-center pt-[30%] pr-[30%]"></span>
+                    <h4 class="mx-3 relative benefit text-3xl font-medium pb-4 after:absolute after:left-0 after:bottom-0 after:border-2 after:rounded-3xl after:border-sky-400 after:w-24">Hiệu quả phòng bệnh tối ưu từ việc từ thiện Tiểm chủng Vắc-xin</h4>
+                    <p class="mt-8 mx-3">
+                        Bệnh viện Đa khoa Phương Đông cung cấp dịch vụ tư
+                        vấn và tiêm chủng vắc-xin dành cho cả trẻ em và
+                        người lớn với nhiều gói tiêm đa dạng, chi phí hợp
+                        lý, mang lại hiệu quả phòng bệnh tối ưu. Tiêm chủng
+                        tạo cho con người nền tảng phát triển khỏe mạnh, không
+                        dị tật, di chứng... góp phần thúc đẩy nguồn nhân lực
+                        cho các quốc gia. Từ đó giảm chi phí chăm sóc y tế, tăng
+                        năng suất lao động, góp phần quan trọng trong xóa đói giảm
+                        nghèo và thúc đẩy phát triển kinh tế, xã hội.
+                        Tiêm chủng vắc-xin là biện pháp phòng bệnh an toàn,
+                        hiệu quả, được áp dụng cho cả người lớn và trẻ em, đặc
+                        biệt là người già, người có bệnh nền mạn tính (tim mạch,
+                        tiểu đường, huyết áp...), người bị suy giảm miễn dịch… Để
+                        được tiêm phòng đầy đủ các loại vắc xin cần thiết, các gia
+                        đình nên lựa chọn những cơ sở y tế chuyên biệt về tiêm chủng,
+                        có đầy đủ cơ sở vật chất, trang thiết bị y tế để được tư vấn và
+                        tiêm vắc xin chất lượng, an toàn.
+                    </p>
+                    <a href=""
+                        class="mt-8 w-full sm:w-5/12 flex sm:flex-1 lg:flex-none items-center justify-center py-2 px-2.5 rounded-full shadow-lg shadow-orange-300 bg-gradient-to-b from-orange-300 to-orange-500 text-white font-medium uppercase hover:opacity-90">
+                        <span class="mr-1 rounded-full flex items-center justify-center w-7 h-7">
+                            <i class="bi bi-pencil-fill"></i>
+                        </span>
+                        Đăng ký tư vấn
+                    </a>
+                </div>  
+            </div>
+        </div>
+        <!-- Các mục -->
+        <div class="select max-w-screen-xl lg:mx-auto mx-3 m-12">
+            <div class="select-effect text-center grid lg:grid-cols-3 grid-cols-2 gap-4 lg:gap-8">
+                <!-- Card 1 -->
+                <div class="class p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <span class="flex justify-center">
+                        <img 
+                            class="w-24 h-24 object-cover rounded-full bg-center bg-no-repeat" 
+                            src="./img/doctor.png" 
+                            alt="Hình ảnh bác sĩ"
+                        >
+                    </span>
+                    <h4 class="font-medium text-xl mt-4 mb-2">Đội ngũ giàu y đức</h4>
+                    <p class="text-gray-600">
+                        Đội ngũ bác sĩ khám sàng lọc và tư vấn có trình độ chuyên môn cao, giàu kinh nghiệm, tư vấn tận tình.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="class p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <span class="flex justify-center">
+                        <img 
+                            class="w-24 h-24 object-cover rounded-full bg-center bg-no-repeat" 
+                            src="./img/Heart.png" 
+                            alt="Hình ảnh bác sĩ"
+                        >
+                    </span>
+                    <h4 class="font-medium text-xl mt-4 mb-2">Cảm giác thư thái, bình yên</h4>
+                    <p class="text-gray-600">
+                       Không gia bệnh viện theo mô hình khách sạn hiện đại, khuôn viên rộng gần 10ha với hàng vạn cây xanh
+                    </p>
+                </div>
+                <div class="class p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <span class="flex justify-center">
+                        <img 
+                            class="w-24 h-24 object-cover rounded-full bg-center bg-no-repeat" 
+                            src="./img/Medal.png" 
+                            alt="Hình ảnh bác sĩ"
+                        >
+                    </span>
+                    <h4 class="font-medium text-xl mt-4 mb-2">Chất lượng dịch vụ hàng đầu</h4>
+                    <p class="text-gray-600">
+                        Trang bị đầy đủ phương tiện y tế cùng ekip cấp cứu luôn túc trực giúp theo dõi và xử trí kịp thời các trường hợp
+                    </p>
+                </div>
+                <div class="class p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <span class="flex justify-center">
+                        <img 
+                            class="w-24 h-24 object-cover rounded-full bg-center bg-no-repeat" 
+                            src="./img/Pig.png" 
+                            alt="Hình ảnh tiết kiệm"
+                        >
+                    </span>
+                    <h4 class="font-medium text-xl mt-4 mb-2">Chi phí hợp lí, tiết kiệm</h4>
+                    <p class="text-gray-600">
+                        Xây dựng đa dạng gọi tiêm với chi phí thích hợp lý, hỗ trợ trả góp qua thẻ tín dụng 0% lãi suất khi mua trọn gói
+                    </p>
+                </div>
+                <div class="class p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <span class="flex justify-center">
+                        <img 
+                            class="w-24 h-24 object-cover rounded-full bg-center bg-no-repeat" 
+                            src="./img/Fast.png" 
+                            alt="Hình ảnh tốc độ làm việc"
+                        >
+                    </span>
+                    <h4 class="font-medium text-xl mt-4 mb-2">Thủ tục đơn giản, nhanh gọn</h4>
+                    <p class="text-gray-600">
+                        Thủ tục đặt lịch dễ dàng, nhanh gọn, tư vấn tận tình không mất nhiều thời gian của khách hàng.
+                    </p>
+                </div>
+                <div class="class p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <span class="flex justify-center">
+                        <img 
+                            class="w-24 h-24 object-cover rounded-full bg-center bg-no-repeat" 
+                            src="./img/Service.png" 
+                            alt="Hình ảnh dịch vụ"
+                        >
+                    </span>
+                    <h4 class="font-medium text-xl mt-4 mb-2">Chăm sóc khách hàng sau tiêm</h4>
+                    <p class="text-gray-600">
+                        Lưu giữ lịch sử tiêm online, nhắc lịch và thông báo cập nhật vắc xin thường xuyên. 
+                    </p>
+                </div>
+
+                
+            </div>
+        </div>
+                
+        
+        <!-- Footer -->
+        <footer class="bg-blue-500 text-white py-8">
+        </footer>
+    </div>
+</body>
+
+</html>
